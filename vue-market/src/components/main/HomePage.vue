@@ -221,9 +221,7 @@ export default {
   },
 }
 </script>
-<style scoped>
-.my-margin {
-    display: none;
-}
+<style >
+  @import '@/assets/css/styles.css'
   
 </style>

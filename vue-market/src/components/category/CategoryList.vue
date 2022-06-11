@@ -100,7 +100,7 @@ export default {
         description: category.description
       }).then(response => {
         if (response.status === 201) {
-          this.getCategory();  
+          // this.getCategory();  
           alert('Category added');  
         }
       }).catch(error => {
@@ -127,7 +127,7 @@ export default {
       //     value = value.toString()
       //     return value.charAt(0).toUpperCase() + value.slice(1)
       // }
-  }
+  },
 
 }
 </script>

@@ -26,7 +26,8 @@ import CartDetail from '@/components/cart/CartDetail.vue';
 import CartAdd from '@/components/cart/CartAdd.vue';
 import CartDelete from '@/components/cart/CartDelete.vue';
 
-axios.defaults.baseURL = 'http://localhost:8000/api/v1/';
+// axios.defaults.baseURL = 'http://localhost:8000/api/v1/';
+axios.defaults.baseURL = 'http://petshop.cn73530.tmweb.ru/api/v1/';
 
 
 const router = createRouter({

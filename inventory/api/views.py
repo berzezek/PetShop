@@ -3,7 +3,8 @@ from inventory.models import Category, Product, Order, Cart
 from rest_framework.response import Response
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 
 
@@ -36,6 +37,7 @@ def category_list(request, id=None):
             return Response(status=status.HTTP_404_NOT_FOUND)
             
 
+@permission_classes([IsAuthenticated])
 @api_view(['PUT'])
 @csrf_exempt
 def category_is_available(request, id):
